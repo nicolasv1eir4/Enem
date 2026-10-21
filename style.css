@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9edf4;
+    color: #26364a;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: #287fbd;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #58677a;
+    font-size: 16px;
+}
+
+.kanban {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.coluna {
+    background: #dfe7f0;
+    border: 2px dashed #bdccdc;
+    border-radius: 10px;
+    padding: 18px;
+    min-height: 380px;
+    transition: background 0.3s;
+}
+
+.coluna h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    color: #26364a;
+    font-size: 20px;
+}
+
+.tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 290px;
+}
+
+.tarefa {
+    background: #287fbd;
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: grab;
+    overflow-wrap: anywhere;
+    box-shadow: 0 3px 6px #00000015;
+}
+
+.tarefa:hover {
+    background: #1d5f91;
+}
+
+.tarefa.arrastando {
+    opacity: 0.4;
+}
+
+.coluna.destacada {
+    background: #c9e5f8;
+    border-color: #287fbd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #65748a;
+    font-size: 13px;
+}
+
+@media (max-width: 750px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .kanban {
+        grid-template-columns: 1fr;
+    }
+
+    .coluna {
+        min-height: 280px;
+    }
+
+    .tarefas {
+        min-height: 180px;
+    }
+}

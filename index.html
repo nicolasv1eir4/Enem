@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban - SENAI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Quadro Kanban - SENAI</h1>
+        <p>Organize suas tarefas arrastando os cartões!</p>
+    </header>
+
+    <main class="kanban">
+
+        <section class="coluna">
+            <h2>A Fazer</h2>
+            <div class="tarefas" id="afazer">
+                <div class="tarefa" draggable="true">
+                    Javascript Prof. Pety
+                </div>
+
+                <div class="tarefa" draggable="true">
+                    Modelar Banco de Dados - Prof. John
+                </div>
+
+                <div class="tarefa" draggable="true">
+                    Criar API REST
+                </div>
+            </div>
+        </section>
+
+        <section class="coluna">
+            <h2>Em Andamento</h2>
+            <div class="tarefas" id="andamento"></div>
+        </section>
+
+        <section class="coluna">
+            <h2>Concluído</h2>
+            <div class="tarefas" id="concluido"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto de Programação Front End - SENAI</p>
+    </footer>
+
+</body>
+</html>
+
+    
+</body>
+</html>
